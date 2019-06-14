@@ -26,15 +26,14 @@ return result
 We can do the check if i in set_2 with lightning fast efficiency because sets are non-indexed,
 and therefore do not have to be iterated through to check if a matching string is contained.
 """
-def common_element(list1, list2):
+def names_in_common(list1, list2):
     set_1 = set(list1)
     set_2 = set(list2)
 
     if len(set_1.intersection(set_2)) > 0:
         return(set_1.intersection(set_2))
 
-duplicates = common_element(names_1, names_2)
-print(duplicates)
+duplicates = names_in_common(names_1, names_2)
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
