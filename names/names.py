@@ -12,7 +12,8 @@ f.close()
 
 """
 We take in two lists then convert those lists in to sets (sets are essentially hash tables).
-We then check to see if we were to run an intersection, if the length of that intersection is greater than 0, it means there are duplicates,
+We then check to see if we were to run an intersection, if the length of that intersection is greater than 0, 
+if it is, it means there are duplicates,
 in which case we should return those duplicates, else return None.
 
 Under the hood, set.intersection() is doing a single for loop, doing a check on each item in set_1:
